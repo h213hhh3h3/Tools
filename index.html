@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a wide range of image and PDF tools to optimize your workflow. Compress, convert, and edit files effortlessly.">
+    <meta name="keywords" content="image tools, PDF tools, compress images, convert PDF, online tools">
+    <meta name="author" content="Your Name">
+    <title>Tool Website - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+            margin: 20px 0;
+        }
+
+        .hero .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hero .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Tool Categories Section */
+        .categories {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .categories h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .category-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .category-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .category-card h3 {
+            font-size: 1.5rem;
+            margin: 0;
+            color: #fff;
+        }
+
+        .category-card p {
+            font-size: 1rem;
+            color: #e0e0e0;
+        }
+
+        /* Featured Tools Section */
+        .featured-tools {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .featured-tools h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .tool-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .tool-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .tool-card h3 {
+            font-size: 1.5rem;
+            margin: 0;
+            color: #fff;
+        }
+
+        .tool-card p {
+            font-size: 1rem;
+            color: #e0e0e0;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .categories-grid, .tools-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Tool Website</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Your All-in-One Tool Hub</h1>
+        <p>Explore a wide range of image and PDF tools to optimize your workflow. Compress, convert, and edit files effortlessly.</p>
+        <a href="#" class="cta-button">Get Started</a>
+    </section>
+
+    <!-- Tool Categories Section -->
+    <section class="categories">
+        <h2>Categories</h2>
+        <div class="categories-grid">
+      <a href="/img-compress.html" class="category-link">
+      <div class="category-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3767/3767084.png" alt="Image Tools">
+        <h3>Image Tools</h3>
+        <p>Compress, resize, and convert images with ease.</p>
+    </div>
+</a>
+
+            <div class="category-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="PDF Tools">
+                <h3>PDF Tools</h3>
+                <p>Merge, split, and convert PDFs effortlessly.</p>
+            </div>
+            <div class="category-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3063/3063792.png" alt="Other Tools">
+                <h3>Other Tools</h3>
+                <p>Explore more tools for your needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tools Section -->
+    <section class="featured-tools">
+        <h2>Featured Tools</h2>
+        <div class="tools-grid">
+            <div class="tool-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Image Compressor">
+                <h3>Image Compressor</h3>
+                <p>Reduce image size without losing quality.</p>
+            </div>
+            <div class="tool-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/337/337932.png" alt="PDF Merger">
+                <h3>PDF Merger</h3>
+                <p>Combine multiple PDFs into one.</p>
+            </div>
+            <div class="tool-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3063/3063792.png" alt="File Converter">
+                <h3>File Converter</h3>
+                <p>Convert files to various formats.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Tool Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
